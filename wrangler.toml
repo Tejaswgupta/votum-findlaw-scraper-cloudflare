@@ -1,0 +1,8 @@
+name = "findlaw-scraper"
+main = "src/worker.js"
+compatibility_date = "2025-02-07"
+workers_dev = true
+preview_urls = false
+
+[observability]
+enabled = true
