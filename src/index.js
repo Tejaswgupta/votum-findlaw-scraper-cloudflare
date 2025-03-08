@@ -84,7 +84,6 @@ async function insertSection(actId, sectionData) {
 			batchSize: 10,          // Size of batches for processing
 			requestInterval: 5000,   // Delay in milliseconds between batches (1 second) - Adjust as needed
 		};
-
 		// Function to extract URLs from XML content using regex
 		function extractUrlsFromXml(xmlText) {
 			const locRegex = /<loc>\s*(.*?)\s*<\/loc>/g;
@@ -109,8 +108,8 @@ async function insertSection(actId, sectionData) {
 			const sitemapIndexUrl = "https://codes.findlaw.com/sitemapindex.xml";
 			let sitemapUrls = await getSitemapUrls(sitemapIndexUrl);
 
-			// Limit the number of sitemaps for testing
-			sitemapUrls = sitemapUrls.slice(0, config.maxSitemaps);
+			// Limit the number of sitemaps for testing 
+			// sitemapUrls = sitemapUrls.slice(0, config.maxSitemaps);
 			// console.log(`Processing ${sitemapUrls.length} sitemaps`);
 
 			let allResults = [];
@@ -122,7 +121,7 @@ async function insertSection(actId, sectionData) {
 				// Get all page URLs from this sitemap
 				let pageUrls = await getSitemapUrls(sitemapUrl);
 				// Limit the number of entries per sitemap for testing
-				pageUrls = pageUrls.slice(0, config.maxEntriesPerSitemap);
+				// pageUrls = pageUrls.slice(0, config.maxEntriesPerSitemap);
 				// console.log(`Processing ${pageUrls.length} entries from sitemap`);
 				
 				// Process each page URL in batches
