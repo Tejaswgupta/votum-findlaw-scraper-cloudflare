@@ -11,14 +11,12 @@ async function getExistingActId(actName) {
 			.select('act_id')
 			.eq('act_name', actName)
 			.single();
-
 		if (error) {
 			if (error.code === 'PGRST116') {  // No rows returned
 				return null;
 			}
 			throw error;
 		}
-
 		return data?.act_id;
 	} catch (error) {
 		console.error('Error checking existing act:', error);
@@ -47,7 +45,7 @@ async function insertAct(actName) {
 		if (error) throw error;
 		return data.act_id;
 	} catch (error) {
-		console.error('Error inserting act:', error);
+		// console.error('Error inserting act:', error);
 		throw error;
 	}
 }
@@ -61,6 +59,7 @@ async function insertSection(actId, sectionData) {
 				act_id: actId,
 				section_title: sectionData.section_title,
 				section_content: sectionData.section_text,
+				country : 'US',
 				additional: {
 					chapter_no: sectionData.chapter_no,
 					section_id: sectionData.section_id,
@@ -71,13 +70,13 @@ async function insertSection(actId, sectionData) {
 
 		if (error) throw error;
 	} catch (error) {
-		console.error('Error inserting section:', error);
+		// console.error('Error inserting section:', error);
 		throw error;
 	}
 }
 
-export default {
-	async fetch(request, env, ctx) {
+// export default {
+	async function fetchData(request, env, ctx) {
 		// Configuration for testing and rate limiting
 		const config = {
 			maxSitemaps: 10,         // Maximum number of sitemaps to process (reduced for testing)
@@ -85,7 +84,6 @@ export default {
 			batchSize: 10,          // Size of batches for processing
 			requestInterval: 5000,   // Delay in milliseconds between batches (1 second) - Adjust as needed
 		};
-
 		// Function to extract URLs from XML content using regex
 		function extractUrlsFromXml(xmlText) {
 			const locRegex = /<loc>\s*(.*?)\s*<\/loc>/g;
@@ -110,23 +108,22 @@ export default {
 			const sitemapIndexUrl = "https://codes.findlaw.com/sitemapindex.xml";
 			let sitemapUrls = await getSitemapUrls(sitemapIndexUrl);
 
-			// Limit the number of sitemaps for testing
-			sitemapUrls = sitemapUrls.slice(0, config.maxSitemaps);
-			console.log(`Processing ${sitemapUrls.length} sitemaps`);
+			// Limit the number of sitemaps for testing 
+			// sitemapUrls = sitemapUrls.slice(0, config.maxSitemaps);
+			// console.log(`Processing ${sitemapUrls.length} sitemaps`);
 
 			let allResults = [];
 
 			// Process each sitemap
 			for (const sitemapUrl of sitemapUrls) {
-				console.log(`Processing sitemap: ${sitemapUrl}`);
+				// console.log(`Processing sitemap: ${sitemapUrl}`);
 
 				// Get all page URLs from this sitemap
 				let pageUrls = await getSitemapUrls(sitemapUrl);
-
 				// Limit the number of entries per sitemap for testing
-				pageUrls = pageUrls.slice(0, config.maxEntriesPerSitemap);
-				console.log(`Processing ${pageUrls.length} entries from sitemap`);
-
+				// pageUrls = pageUrls.slice(0, config.maxEntriesPerSitemap);
+				// console.log(`Processing ${pageUrls.length} entries from sitemap`);
+				
 				// Process each page URL in batches
 				for (let i = 0; i < pageUrls.length; i += config.batchSize) {
 					const batch = pageUrls.slice(i, i + config.batchSize);
@@ -146,9 +143,9 @@ export default {
 					});
 
 					const results = await Promise.all(fetchPromises);
-					
 					// Process results for database insertion
 					for (const result of results) {
+						console.log('result' , result)
 						if (result.status === 'success') {
 							try {
 								// Insert act and get its ID
@@ -157,7 +154,7 @@ export default {
 								// Insert section using the act ID
 								await insertSection(actId, result.content);
 							} catch (error) {
-								console.error('Error processing result:', error);
+								// console.error('Error processing result:', error);
 								result.status = 'error';
 								result.error = error.message;
 							}
@@ -193,9 +190,7 @@ export default {
 				headers: { "Content-Type": "application/json" },
 			});
 		}
-	},
-};
-
+	}
 function extractActDetails(text) {
 	/**
 	 * Extracts the act name, chapter number, section ID, and section title from a given text.
@@ -205,7 +200,8 @@ function extractActDetails(text) {
 	 */
 
 	// Improved regex to handle variations, including cases with letters in section ID
-	const match = text.match(/([\w\s]+)\s*(\(Ch\.?\s*[\w\-]+\))?\s*(§\s*([\w\.]+))\.?\s*(.*)/i);
+
+	const match = text.match(/(.+?)\s*(\(Ch\.?\s*[\w\-\.\s]+\))?\s*§\s*([\w\.\-]+)\.?\s*(.*)/i);
 
 	if (match) {
 		const actName = match[1] ? match[1].trim() : null;
@@ -256,7 +252,7 @@ function extractMeaningfulContent(html, url) {
 	// --- 3. Extract and Process Section Text (No Subsections) ---
 	// Remove the <h1> tag and its content
 	// Extract all sections (subsections) of the body content
-	const subsectionsMatches = [...html.matchAll(/<div class="subsection">([\s\S]*?)<\/div>/g)];
+	const subsectionsMatches = [...html.matchAll(/<div class="codes-content__text codes-content__text--min-height">([\s\S]*?)<\/div>/g)];
 
 	// Extract and clean up all subsection text
 	const subsections = subsectionsMatches.map(subsection => {
@@ -278,3 +274,5 @@ function extractMeaningfulContent(html, url) {
 
 	return sectionData;
 }
+
+fetchData().then(() => console.log("Done!")).catch(console.error);
