@@ -75,14 +75,14 @@ async function insertSection(actId, sectionData) {
 	}
 }
 
-// export default {
-	async function fetchData(request, env, ctx) {
+export default {
+	async fetch(request, env, ctx) {
 		// Configuration for testing and rate limiting
 		const config = {
 			maxSitemaps: 10,         // Maximum number of sitemaps to process (reduced for testing)
 			maxEntriesPerSitemap: 100, // Maximum number of entries to process per sitemap (reduced for testing)
-			batchSize: 10,          // Size of batches for processing
-			requestInterval: 5000,   // Delay in milliseconds between batches (1 second) - Adjust as needed
+			batchSize: 1,          // Size of batches for processing
+			requestInterval: 2000,   // Delay in milliseconds between batches (1 second) - Adjust as needed
 		};
 		// Function to extract URLs from XML content using regex
 		function extractUrlsFromXml(xmlText) {
@@ -191,6 +191,7 @@ async function insertSection(actId, sectionData) {
 			});
 		}
 	}
+}
 function extractActDetails(text) {
 	/**
 	 * Extracts the act name, chapter number, section ID, and section title from a given text.
@@ -275,4 +276,4 @@ function extractMeaningfulContent(html, url) {
 	return sectionData;
 }
 
-fetchData().then(() => console.log("Done!")).catch(console.error);
+// fetchData().then(() => console.log("Done!")).catch(console.error);
