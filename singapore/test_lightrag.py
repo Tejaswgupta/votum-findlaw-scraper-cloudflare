@@ -1,13 +1,14 @@
-import os
 import asyncio
 import json
+import os
+
+import numpy as np
+from dotenv import load_dotenv
 from lightrag import LightRAG, QueryParam
 from lightrag.kg.shared_storage import initialize_pipeline_status
 from lightrag.llm.openai import openai_complete_if_cache, openai_embed
 from lightrag.utils import EmbeddingFunc
-import numpy as np
 from supabase import create_client
-from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -27,9 +28,8 @@ async def llm_model_func(
         prompt,
         system_prompt=system_prompt,
         history_messages=history_messages,
-        api_key="sk-ncjndicw88924bb2",
-        # api_key='sk-ZhkEF1NJlGpWmn5lo-3Qaw',
-        base_url="https://model.thevotum.com",
+        api_key=os.getenv("VOTUM_API_KEY"),
+        base_url=os.getenv("MODEL_BASE_URL", "https://model.thevotum.com"),
         **kwargs,
     )
 
@@ -38,8 +38,8 @@ async def embedding_func(texts: list[str]) -> np.ndarray:
     return await openai_embed(
         texts,
         model="cohere-embed-v3",
-        api_key="sk-ncjndicw88924bb2",
-        base_url="https://model.thevotum.com",
+        api_key=os.getenv("VOTUM_API_KEY"),
+        base_url=os.getenv("MODEL_BASE_URL", "https://model.thevotum.com"),
     )
 
 
@@ -82,9 +82,10 @@ async def initialize_rag():
 
     return rag
 
+
 async def main():
     rag = await initialize_rag()
-    
+
     # with open('sections.json', 'r') as file:
     #     sections = json.load(file)
 
@@ -106,18 +107,16 @@ async def main():
     #     """
     #     await rag.ainsert(text)
 
-
-    query = "A client needs a certified copy of their accounting firm’s approval document but accidentally included their personal mobile number in the filing."
+    query = "A client needs a certified copy of their accounting firm's approval document but accidentally included their personal mobile number in the filing."
     result = await rag.aquery(
         query,
         QueryParam(
-            mode='mix',
+            mode="mix",
             top_k=10,
-        )
+        ),
     )
     print(result)
 
+
 if __name__ == "__main__":
     asyncio.run(main())
-
-
