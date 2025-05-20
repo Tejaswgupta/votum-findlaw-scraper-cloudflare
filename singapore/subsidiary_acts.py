@@ -8,6 +8,7 @@ from urllib.parse import urljoin, urlparse  # Keep urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
+
 from supabase import Client, create_client
 
 # --- Logging Setup ---
@@ -703,11 +704,6 @@ def scrape_and_store_multiple_sls(sl_paths_to_scrape: list):
                     f"Successfully scraped SL '{sl_name_log}' with {len(all_sections_data)} sections."
                 )
                 logging.info("Storing/Updating SL in Supabase...")
-
-                # Ensure parent act exists before attempting to store SL if parent_id is required
-                parent_id = sl_data.get("parent_id")
-                # Add logic here if you want to *enforce* parent existence before storing
-                # For now, store_in_supabase handles the NULL case if parent wasn't found
 
                 success = store_in_supabase(sl_data, all_sections_data, supabase)
 

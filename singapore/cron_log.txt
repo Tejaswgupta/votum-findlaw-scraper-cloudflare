@@ -1,0 +1,204 @@
+Starting Singapore case law scraping at Mon May 12 10:55:02 UTC 2025
+Starting Singapore case law scraping process...
+Processing page 1...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=1
+Found 10 cases on page 1
+0 cases need processing on page 1
+Processing page 2...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=2
+Found 10 cases on page 2
+0 cases need processing on page 2
+Processing page 3...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=3
+Found 10 cases on page 3
+0 cases need processing on page 3
+Found 3 consecutive pages with no new cases. Stopping.
+Singapore case law scraping completed. Found 0 new cases.
+Singapore case law scraping process finished
+Finished at Mon May 12 10:55:05 UTC 2025
+----------------------------------------
+Starting Singapore case law scraping at Mon May 12 11:31:27 UTC 2025
+Starting Singapore case law scraping process...
+Processing page 1...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=1
+Found 10 cases on page 1
+10 cases need processing on page 1
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_87
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_86
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_13
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCF_29
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_85
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_84
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_21
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCI_14
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_12
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_19
+Inserted case: COSCO Shipping Specialized Carriers Co, Ltd    v  PT OKI Pulp & Paper   Mills and others   [2025] SGHC 87 (ID: 15582)
+Inserted case: Crystal Beauty Pte Ltd   v  Xu   Jasmine and another  [2025] SGHC 86 (ID: 15583)
+Inserted case: Re   Chen Weiwen Kelvin   (DBS Bank Ltd and another, non-parties)  [2025] SGHCR 13 (ID: 15584)
+Inserted case: XFN  v  X  FO  [2025] SGHCF 29 (ID: 15585)
+Inserted case: DOO  v  DOP  [2025] SGHC 85 (ID: 15586)
+Inserted case: Canstone Management Ltd   v  Allestari   Development Pte Ltd and others  [2025] SGHC 84 (ID: 15587)
+Skipping case with existing citation: [2025] SGCA 21
+Inserted case: DKB   v  DKC     [2025] SGHC(I) 14 (ID: 15588)
+Inserted case: Vigar, Andrew   v  XL Insurance Company Se Singapore Branch     [2025] SGHCR 12 (ID: 15589)
+Inserted case: Affert Resources Pte Ltd (in court compulsory winding up)   v  Industries   Chimiques du Senegal and another  [2025] SGCA 19 (ID: 15590)
+Processing page 2...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=2
+Found 10 cases on page 2
+10 cases need processing on page 2
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_11
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_74
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_82
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCF_27
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_20
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_83
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_10
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_9
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_81
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_79
+Inserted case: DBS Bank Ltd  v  Li Yuan  [2025] SGHCR 11 (ID: 15591)
+Inserted case: Koh Lin Yee  v  Oversea-Chinese Banking Corp   Ltd  [2025] SGHC 74 (ID: 15592)
+Inserted case: Oversea-Chinese Banking Corp Ltd  v  Argoglobal   Underwriting Asia Pacific Pte Ltd and others  [2025] SGHC 82 (ID: 15593)
+Inserted case: XKT  v  XKU  [2025] SGHCF 27 (ID: 15594)
+Inserted case: Khoo Phaik Ean Patricia and another   v  Khoo   Phaik Eng Katherine and others  [2025] SGCA 20 (ID: 15595)
+Inserted case: Sim Khong (Pte) Ltd  v  Lion Peak Pte Ltd     [2025] SGHC 83 (ID: 15596)
+Skipping case with existing citation: [2025] SGHCR 10
+Inserted case: Tan Tse Haw   v  Peh   Tian Swee and another  [2025] SGHCR 9 (ID: 15597)
+Inserted case: Sugumaran s/o Kannan  v  Public Prosecutor   and another matter  [2025] SGHC 81 (ID: 15598)
+Inserted case: Re     Muhammad Naseer  [2025] SGHC 79 (ID: 15599)
+Processing page 3...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=3
+Found 10 cases on page 3
+10 cases need processing on page 3
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_78
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_77
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_8
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_80
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_18
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_75
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_7
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_76
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCF_28
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_6
+Skipping case with existing citation: [2025] SGHC 78
+Skipping case with existing citation: [2025] SGHC 77
+Skipping case with existing citation: [2025] SGHCR 8
+Skipping case with existing citation: [2025] SGHC 80
+Skipping case with existing citation: [2025] SGCA 18
+Skipping case with existing citation: [2025] SGHC 75
+Skipping case with existing citation: [2025] SGHCR 7
+Skipping case with existing citation: [2025] SGHC 76
+Skipping case with existing citation: [2025] SGHCF 28
+Skipping case with existing citation: [2025] SGHCR 6
+Processing page 4...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=4
+Found 10 cases on page 4
+10 cases need processing on page 4
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCI_13
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_73
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_71
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_17
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_72
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCF_26
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_57
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCI_12
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCF_24
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCI_11
+Skipping case with existing citation: [2025] SGHC(I) 13
+Skipping case with existing citation: [2025] SGHC 73
+Skipping case with existing citation: [2025] SGHC 71
+Skipping case with existing citation: [2025] SGCA 17
+Skipping case with existing citation: [2025] SGHC 72
+Skipping case with existing citation: [2025] SGHCF 26
+Skipping case with existing citation: [2025] SGHC 57
+Skipping case with existing citation: [2025] SGHC(I) 12
+Skipping case with existing citation: [2025] SGHCF 24
+Inserted case: DKB   v  DKC     [2025] SGHC(I) 11 (ID: 15600)
+Processing page 5...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=5
+Found 10 cases on page 5
+10 cases need processing on page 5
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_70
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCI_10
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_5
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_69
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_65
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_68
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_67
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_64
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_61
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_16
+Inserted case: Farooq Ahmad Mann (in his capacity as the private trustee in bankruptcy of Li Hua)  v  Xia Zheng  [2025] SGHC 70 (ID: 15601)
+Inserted case: DNO   v  DNP     [2025] SGHC(I) 10 (ID: 15602)
+Inserted case: Management Corporation Strata Title Plan No 4348   v  Hoi Hup Sunway Pasir Ris Pte Ltd and others   [2025] SGHCR 5 (ID: 15603)
+Inserted case: Public Prosecutor   v  Teo Hwee Peng and other appeals  [2025] SGHC 69 (ID: 15604)
+Inserted case: Vikramathithan a/l Rasu   v  AK Equine Pte Ltd     [2025] SGHC 65 (ID: 15605)
+Inserted case: White Oak Trade Finance Assetco 1, LLC  v  Rhodium International Trading USA, Inc  [2025] SGHC 68 (ID: 15606)
+Inserted case: Re   King & Wood Mallesons   and other matters  [2025] SGHC 67 (ID: 15607)
+Inserted case: CROWN Construction Pte Ltd  v  UNIVEL Hospitality Pte Ltd  [2025] SGHC 64 (ID: 15608)
+Inserted case: DLS   v  DLT   and another matter  [2025] SGHC 61 (ID: 15609)
+Inserted case: Roshdi Bin Abdullah Altway   v  Public Prosecutor and another matter  [2025] SGCA 16 (ID: 15610)
+Processing page 6...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=6
+Found 10 cases on page 6
+10 cases need processing on page 6
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_66
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_63
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCAI_2
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCF_22
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_4
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_53
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_60
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_59
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_3
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_58
+Inserted case: Lorinet, Pierre Andre Jacques  v  Helu-Trans (S) Pte Ltd  [2025] SGHC 66 (ID: 15611)
+Inserted case: Ren Xin Wu   v  Lee Kuan Fung   and another  and another matter  [2025] SGHC 63 (ID: 15612)
+Inserted case: DJP and others   v  DJO     [2025] SGCA(I) 2 (ID: 15613)
+Inserted case: WVH and another  v  WV  G and another appeal and other matters  [2025] SGHCF 22 (ID: 15614)
+Inserted case: Maybank Singapore Ltd  v  Elavarasan s/o Manoharan  [2025] SGHCR 4 (ID: 15615)
+Inserted case: Cheng Shi Ying Cherissa  v  Khoo Chong Kiat   and another  [2025] SGHC 53 (ID: 15616)
+Inserted case: Public Prosecutor   v  Foo Li Ping and another   matter   [2025] SGHC 60 (ID: 15617)
+Inserted case: DJY   v  DJZ   and another  [2025] SGHC 59 (ID: 15618)
+Inserted case: Le Ninh Tien  v  Rainbow Forest Enterprises Lt  d and others   [2025] SGHCR 3 (ID: 15619)
+Inserted case: Orexim Trading Ltd  v  Mahavir Port and Terminal Pte Ltd   & Others   [2025] SGHC 58 (ID: 15620)
+Processing page 7...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=7
+Found 10 cases on page 7
+9 cases need processing on page 7
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHCR_2
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_56
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_14
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_55
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_50
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGCA_15
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_54
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_52
+First attempt: https://votum-scraper-singapore.tejasw.workers.dev/api/scrape/cases?url=https%3A//www.elitigation.sg/gd/s/2025_SGHC_51
+Inserted case: L’Oreal and another   v  Shopee Singapore Pte Ltd  [2025] SGHCR 2 (ID: 15621)
+Inserted case: See Kian Kok  v  Public Prosecutor   and another matter  [2025] SGHC 56 (ID: 15622)
+Inserted case: Palm Grove Beach Hotels Pvt Ltd   v  Hilton Worldwide Manage Ltd and another     [2025] SGCA 14 (ID: 15623)
+Inserted case: Public Prosecutor   v  Ong Eng Siew  [2025] SGHC 55 (ID: 15624)
+Inserted case: Valency International Pte Ltd   v  JSW International Tradecorp Pte Ltd and others     [2025] SGHC 50 (ID: 15625)
+Inserted case: Muhammad Salleh bin Hamid  v  Public Prosecutor  [2025] SGCA 15 (ID: 15626)
+Inserted case: Foo Diana  v  Woo Mui Chan  [2025] SGHC 54 (ID: 15627)
+Inserted case: Wong Joo Wan (as liquidator of Envy Hospitality Holdings Pte Ltd (in members’ voluntary liquidation))  v  L  im Siong Heng Raymond and another  [2025] SGHC 52 (ID: 15628)
+Inserted case: Sunrise Plus (Pte) Ltd   v  The   Sunrider Corp dba Sunrider International   [2025] SGHC 51 (ID: 15629)
+Processing page 8...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=8
+Found 10 cases on page 8
+0 cases need processing on page 8
+Processing page 9...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=9
+Found 10 cases on page 9
+0 cases need processing on page 9
+Processing page 10...
+https://votum-scraper-singapore.tejasw.workers.dev/api/sitemap/cases?index=10
+Found 10 cases on page 10
+0 cases need processing on page 10
+Found 3 consecutive pages with no new cases. Stopping.
+Singapore case law scraping completed. Found 48 new cases.
+Singapore case law scraping process finished
+Finished at Mon May 12 11:32:06 UTC 2025
+----------------------------------------
